@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1376168349 source:d:\study material\programs\rabin karp\main.cpp
+	<iostream>
+	<string.h>
+
