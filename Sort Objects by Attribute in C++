@@ -1,0 +1,24 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+#define type pair<int,int>
+int main()
+{
+	vector< pair<int, pair<int,int> > > data;
+	
+	data.push_back(pair<int, pair<int,int> > (3, (pair<int,int>(2,3))));
+	data.push_back(pair<int, pair<int,int> > (5, (pair<int,int>(2,3))));
+	data.push_back(pair<int, pair<int,int> > (6, (pair<int,int>(2,3))));
+	data.push_back(pair<int, pair<int,int> > (1, (pair<int,int>(2,3))));
+	data.push_back(pair<int, pair<int,int> > (9, (pair<int,int>(2,3))));
+	data.push_back(pair<int, pair<int,int> > (8, (pair<int,int>(2,3))));
+	
+	sort(data.begin(),data.end());
+	
+	for(int i=0;i<6;++i)
+		cout<<data[i].first<<" ";
+		
+	return 0;
+}
