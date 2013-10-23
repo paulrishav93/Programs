@@ -2,7 +2,11 @@
 #include <vector>
 #include <queue>
 
+
+
 using namespace std;
+
+typedef pair<int,char> ci;
 
 class node
 {
@@ -13,15 +17,15 @@ public:
     node *left;
     node *right;
 
-    node(char ch,int data)
+
+    node(char ch,int data,node *left=0, node *right=0)
     {
         this->data=data;
         this->ch=ch;
-        left=0;
-        right=0;
+        this->left=left;
+        this->right=right;
     }
 };
-
 void printArray(vector<int> a, int top)
 {
     for(int i=0;i<top;++i)
@@ -29,7 +33,6 @@ void printArray(vector<int> a, int top)
 
     cout<<endl;
 }
-
 void printCodes(node *root, vector<int> a, int top)
 {
     if(root->left)
@@ -50,7 +53,6 @@ void printCodes(node *root, vector<int> a, int top)
         printArray(a,top);
     }
 }
-
 struct cmp
 {
     bool operator ()(const node *a, const node *b)
@@ -75,14 +77,13 @@ void huffman(vector<char> a, vector<int> freq)
 
     while(mypq.size()!=1)
     {
-        left=mypq.top();
+        left=mypq.top(); 
         mypq.pop();
+        
         right=mypq.top();
         mypq.pop();
 
-        top=new node('$',left->data+right->data);
-        top->left=left;
-        top->right=right;
+        top=new node('$',left->data+right->data,left,right);
 
         mypq.push(top);
     }
