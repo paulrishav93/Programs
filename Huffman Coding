@@ -4,8 +4,6 @@
 
 using namespace std;
 
-typedef pair<int,char> ci;
-
 class node
 {
 
