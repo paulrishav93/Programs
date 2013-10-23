@@ -2,8 +2,6 @@
 #include <vector>
 #include <queue>
 
-
-
 using namespace std;
 
 typedef pair<int,char> ci;
