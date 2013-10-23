@@ -15,7 +15,6 @@ public:
     node *left;
     node *right;
 
-
     node(char ch,int data)
     {
         this->data=data;
@@ -24,6 +23,7 @@ public:
         right=0;
     }
 };
+
 void printArray(vector<int> a, int top)
 {
     for(int i=0;i<top;++i)
@@ -31,6 +31,7 @@ void printArray(vector<int> a, int top)
 
     cout<<endl;
 }
+
 void printCodes(node *root, vector<int> a, int top)
 {
     if(root->left)
@@ -51,6 +52,7 @@ void printCodes(node *root, vector<int> a, int top)
         printArray(a,top);
     }
 }
+
 struct cmp
 {
     bool operator ()(const node *a, const node *b)
