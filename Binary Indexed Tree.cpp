@@ -13,7 +13,14 @@ class BIT
       public:
 
       BIT(int N):tree(vector<int> (N+1, 0)),max_Val(N){}
-
+    
+      //need to update all the nodes which are part of the
+      //left subtree where idx lies
+      //-idx= complement(idx) + 1
+      //idx & -idx keeps only the last digit which was 1 (from LSB)
+      //remaining all are made zero
+      //when this value is repeated added to idx, when traverse upward the
+      //left subtree and update each element
       void update(int idx, int val)
       {
            while (idx <= max_Val)
@@ -23,7 +30,9 @@ class BIT
            }
       }
       
-      //Returns the cumulative frequency of index idx in O(lg N) time
+      //Returns the cumulative frequency of index idx
+      //moving down the tree
+      //so using idx-=(expression)
       int readCF(int idx)
       {
         int sum=0;
@@ -35,7 +44,7 @@ class BIT
         return sum;
       }
 
-      //return the frequency in 2*O(lg N) time
+      //return the frequency
       int readF(int idx)
       {
           return readCF(idx)-readCF(idx-1);
