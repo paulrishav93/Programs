@@ -1,4 +1,4 @@
-Dynamic-Programming
+Data Structures & Basic Algorithms
 ===================
 
-Dynamic Programming Basic Problems
+Need to clean up junk files
