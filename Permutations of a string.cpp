@@ -1,4 +1,18 @@
-// PRINT ALL PERMUTATIONS OF A STRING
+
+/* 
+
+PRINT ALL PERMUTATIONS OF A STRING
+
+The idea is that for every N length string we can calculate the permutation
+of that string by first calculating all the strings which start at the first
+letter of the original string + all the permutations of the rest of the string
+and then the permutations of the string starts with the second letter + all
+the permutations of the rest of the string and so on until we reach the strings
+which starts with the last letter of the string + all the permutations of the
+rest of the string .
+
+*/
+
 #include <stdio.h>
 #include <string>
 #include <math.h>
@@ -21,7 +35,6 @@ void permute(char *a, int index, int end_index)
         {
             swap(a[i],a[index]);
             permute(a,index + 1 , end_index);
-            swap(a[i],a[index]);
         }
     }
 }
