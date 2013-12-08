@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1381078985 source:d:\programs\objectsort\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

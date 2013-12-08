@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1375903143 source:e:\study material\programs\big multiplication\main.cpp
+	<iostream>
+	<fstream>
+

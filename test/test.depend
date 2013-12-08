@@ -1,5 +1,10 @@
 # depslib dependency file v1.0
-1376683972 source:d:\study material\programs\test\main.cpp
+1386311949 source:d:\programs\test\main.cpp
 	<iostream>
-	<math.h>
+	<vector>
+	<algorithm>
+	<queue>
+	<cstdlib>
+	<ctime>
+	<string>
 

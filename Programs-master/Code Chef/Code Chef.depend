@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1376087763 source:d:\study material\programs\code chef\main.cpp
+	<iostream>
+	<math.h>
+

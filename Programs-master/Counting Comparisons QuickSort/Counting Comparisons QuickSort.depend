@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1373664071 source:e:\study material\programs\counting comparisons quicksort\main.cpp
+	<iostream>
+	<fstream>
+

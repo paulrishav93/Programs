@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1385730666 source:d:\programs\binary indexed tree\main.cpp
+	<iostream>
+	<vector>
+	<cstdlib>
+	<time.h>
+

@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+class clock{
+      int hour;
+      int min;
+      public:
+      clock(int i, int j){ hour=i; min=j;}
+      float angle_calc()
+      {     float anglehour, anglemin;
+            if(hour>6)
+            anglehour=(12-hour)*5;
+            else anglehour=hour*5;
+
+            if(min>30)
+            anglemin=(60-min);
+            else anglemin=min;
+
+            return (anglehour-anglemin);
+      }
+};
+
+int main()
+{
+    int hour,min;
+    cout<<"Enter hours and minutes\n";
+
+    cin>>hour>>min;
+
+    clock a (hour,min);
+
+    cout<<a.angle_calc();
+
+
+    return 0;
+}

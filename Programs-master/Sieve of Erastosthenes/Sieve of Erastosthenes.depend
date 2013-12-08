@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1376733786 source:d:\programs\programs-master\sieve of erastosthenes\main.cpp
+	<fstream>
+	<math.h>
+

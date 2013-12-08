@@ -1,22 +1,17 @@
-#include<iostream>
-#include<string.h>
-
-using namespace std;
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    int W;
+    int y=28;
 
-    cin>>W;
+    const int x=y;
 
-    string *words=new string[W];
+    int a[x];
 
-    for(uint16_t i=0;i<W;++i)
-        cin>>words[i];
+    a[0]='A';
 
-    for(uint16_t i=0;i<W;++i)
-        cout<<words[i];
+    printf("%c%d",a[0],y);
 
     return 0;
-
 }
