@@ -1,3 +1,4 @@
+// PRINT ALL PERMUTATIONS OF A STRING
 #include <stdio.h>
 #include <string>
 #include <math.h>
