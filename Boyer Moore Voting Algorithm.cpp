@@ -16,7 +16,7 @@ void boyer_moore_majority()
 //        if ( key == -1 ) { key = A[i]; count = 1;}
 
 		if ( A[i] == key ) { count ++ ; }
-        else if (key == -1 ) { count = 1; key = A[i];}
+        	else if (key == -1 ) { count = 1; key = A[i];}
 		else
 		{
 		    if ( !count ) {key = A[i];}
