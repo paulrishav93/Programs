@@ -8,24 +8,13 @@ void boyer_moore_majority()
 	int key = A[0];
 	int count = 0;
 
-	int i = 0;
+	int i = -1;
 
-	while ( i < len )
+	while ( ++i < len )
 	{
-
-//        if ( key == -1 ) { key = A[i]; count = 1;}
-
 		if ( A[i] == key ) { count ++ ; }
         	else if (key == -1 ) { count = 1; key = A[i];}
-		else
-		{
-		    if ( !count ) {key = A[i];}
-		    else if ( count >= 1 ) {count --; if(!count) key = -1;}
-		}
-
-		i++;
-
-		cout << key <<" " << count << endl;
+	    	else if ( count >= 1 ) {count --; if(!count) key = -1;}
 	}
 
 	if ( count >= 1 ) cout << key << endl;
