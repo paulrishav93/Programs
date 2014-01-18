@@ -6,13 +6,7 @@ using namespace std;
 class node
 {
 public:
-    node(int data)
-    {
-        left = 0;
-        right = 0;
-        this->data = data;
-    }
-
+    node(int data):left(0),right(0),data(data){}
     node* left;
     node *right;
     int data;
